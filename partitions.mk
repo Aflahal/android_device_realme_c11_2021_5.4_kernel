@@ -9,6 +9,7 @@ AB_OTA_PARTITIONS += \
     dtbo \
     boot \
     socko \
+    vendor_boot \
     system \
     system_ext \
     vendor \
