@@ -89,6 +89,9 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     libandroidicu 
     $(OUT_DIR)/target/product/$(PRODUCT_DEVICE)/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/recovery/root/system/etc/recovery.fstab:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.RMX3231
+
 # Hidl
 #PRODUCT_ENFORCE_VINTF_MANIFEST := false
 
